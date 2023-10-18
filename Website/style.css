@@ -1,0 +1,42 @@
+body {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Style the tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the tooltip icon */
+.info-icon {
+    font-size: 20px;
+    color: #007bff; /* Change the color as needed */
+    cursor: pointer;
+}
+
+/* Style the tooltip text */
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #007bff; /* Change the background color as needed */
+    color: #d66418; /* Change the text color as needed */
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the tooltip text when hovering over the icon */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
